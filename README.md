@@ -29,32 +29,6 @@ This repository contains Terraform configuration files to provision an AWS EC2 i
 - Learning and experimentation with Terraform + AWS
 
 ---
-
-## 📂 Project Structure
-
-terraform-aws-ec2/
-├── main.tf
-├── variables.tf
-├── outputs.tf
-├── provider.tf
-├── install_nginx.sh
-├── .gitignore
-└── README.md
-
-
----
-
-## ▶️ Getting Started
-
-### 1. Initialize Terraform
-```bash
-terraform init
-
-
-terraform plan
-terraform apply
-
-
 ## 📌 Notes on Version Control and Cleanup
 
 To ensure security and prevent large file issues:
@@ -69,3 +43,14 @@ To ensure security and prevent large file issues:
 
 - Never commit your `.pem` files, secrets, or `*.tfvars` files containing credentials.
 - Always use **environment variables** or **secret managers** (like [AWS Secrets Manager](https://aws.amazon.com/secrets-manager/)) to manage sensitive data in production environments.
+
+
+---
+
+## ▶️ Getting Started
+
+### 1. Initialize Terraform
+```bash
+terraform init
+terraform plan
+terraform apply
